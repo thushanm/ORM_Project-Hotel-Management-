@@ -1,0 +1,36 @@
+
+.asidePane{
+    -fx-background-image: url("../img/4.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+
+}
+.fontSizeX16{
+    -fx-font-size: 25px;
+}
+.mainForm{
+    -fx-background-radius: 25px;
+
+
+}
+.textFields{
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+.labelPane{
+    -fx-background-color: rgb(161, 159, 245);
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+}
+
+.btn:hover{
+    -fx-background-color: linear-gradient(to right, red, rgb(172, 16, 203));
+    -fx-border-color:green;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-text-fill: white;
+}
+

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hotel.controller.DashboardController">
+   <children>
+      <GridPane layoutX="583.0" layoutY="279.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="270.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1114.000015258789" minWidth="10.0" prefWidth="1095.3333435058594" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="768.0" prefWidth="367.0" style="-fx-border-color: black;">
+               <children>
+                  <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="311.0" prefWidth="264.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+                     <children>
+                        <Label layoutX="12.0" layoutY="17.0" prefHeight="36.0" prefWidth="86.0" text="Hello" textFill="#d0c4c4">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <VBox layoutX="4.0" layoutY="276.0" prefHeight="383.0" prefWidth="264.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0">
+                     <children>
+                        <HBox prefHeight="41.0" prefWidth="262.0">
+                           <children>
+                              <AnchorPane maxHeight="87.0" minHeight="10.0" minWidth="10.0" prefHeight="41.0" prefWidth="15.0" />
+                              <Button mnemonicParsing="false" onAction="#btnNaviReservation" prefHeight="61.0" prefWidth="223.0" stylesheets="@assets/img/blackIon/style/style.css" text="Add Reservation">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="262.0">
+                           <children>
+                              <AnchorPane maxHeight="87.0" minHeight="10.0" minWidth="10.0" prefHeight="41.0" prefWidth="15.0" />
+                              <Button mnemonicParsing="false" onAction="#btnNaviStudent" prefHeight="61.0" prefWidth="223.0" stylesheets="@assets/img/blackIon/style/style.css" text="Add Student">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="51.0" prefHeight="41.0" prefWidth="262.0">
+                           <children>
+                              <AnchorPane maxHeight="87.0" minHeight="10.0" minWidth="10.0" prefHeight="41.0" prefWidth="15.0" />
+                              <Button mnemonicParsing="false" onAction="#btnNaviRoom" prefHeight="61.0" prefWidth="223.0" stylesheets="@assets/img/blackIon/style/style.css" text="Manage Room">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="92.0" prefHeight="41.0" prefWidth="262.0">
+                           <children>
+                              <AnchorPane maxHeight="87.0" minHeight="10.0" minWidth="10.0" prefHeight="41.0" prefWidth="15.0" styleClass="btnIcon04" />
+                              <Button mnemonicParsing="false" onAction="#btnNaviUser" prefHeight="61.0" prefWidth="223.0" styleClass="button-main" stylesheets="@assets/img/blackIon/style/style.css" text="Manage User">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <AnchorPane prefHeight="68.0" prefWidth="262.0">
+                           <children>
+                              <Pane layoutX="-34.0" layoutY="-86.0" prefHeight="56.0" prefWidth="86.0" styleClass="logOut" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fitHeight="56.0" fitWidth="94.0" onMouseClicked="#btnLogout" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@assets/img/blackIon/enter.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <Label fx:id="lblUserID" layoutX="81.0" layoutY="196.0" prefHeight="26.0" prefWidth="170.0" text="User" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="768.0" prefWidth="1039.0" GridPane.columnIndex="1">
+               <children>
+                  <GridPane layoutX="266.0" layoutY="294.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="50.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="730.0" minHeight="10.0" prefHeight="650.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="164.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <AnchorPane fx:id="pane" prefHeight="706.0" prefWidth="1096.0" GridPane.rowIndex="1" />
+                        <AnchorPane prefHeight="85.0" prefWidth="1096.0" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+               </children></AnchorPane>
+         </children>
+      </GridPane>
+      <ImageView fitHeight="127.0" fitWidth="151.0" layoutX="61.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/img/profile.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

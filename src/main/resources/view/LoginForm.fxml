@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="pane" prefHeight="458.0" prefWidth="786.0" style="-fx-background-color: D2DAFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hotel.controller.LoginFormController">
+   <children>
+      <AnchorPane layoutX="-12.0" layoutY="137.0" maxWidth="821.0" prefHeight="322.0" prefWidth="387.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-12.0" AnchorPane.rightAnchor="411.0" AnchorPane.topAnchor="137.0">
+         <children>
+            <ImageView fitHeight="449.0" fitWidth="373.0" layoutX="15.0" layoutY="-132.0" pickOnBounds="true">
+               <image>
+                  <Image url="@assets/img/blackIon/images.jpeg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <VBox layoutX="373.0" layoutY="15.0" prefHeight="460.0" prefWidth="428.0" style="-fx-background-color: EEF1FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="373.0" AnchorPane.rightAnchor="-15.0" AnchorPane.topAnchor="-2.0">
+         <children>
+            <HBox layoutX="10.0" layoutY="137.0" prefHeight="70.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="56.0" top="50.0" />
+               </VBox.margin>
+               <children>
+                  <TextField fx:id="txtEmail" onAction="#btnTxtEmail" prefHeight="45.0" prefWidth="300.0" promptText="Enter Your Email" />
+               </children>
+            </HBox>
+            <HBox focusTraversable="true" prefHeight="52.0" prefWidth="456.0">
+               <children>
+                  <PasswordField fx:id="txtPwd" onAction="#btnTxtPwd" prefHeight="45.0" prefWidth="300.0" promptText="Enter Your Password" />
+               </children>
+               <VBox.margin>
+                  <Insets left="56.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="30.0" layoutY="180.0" prefHeight="44.0" prefWidth="476.0">
+               <VBox.margin>
+                  <Insets left="56.0" />
+               </VBox.margin>
+            </HBox>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnLogin" prefHeight="37.0" prefWidth="190.0" style="-fx-font-weight: bold;" styleClass="button1" stylesheets="@assets/img/blackIon/style/style.css" text="Login" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets left="102.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
